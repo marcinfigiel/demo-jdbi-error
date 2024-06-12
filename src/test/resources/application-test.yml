@@ -1,0 +1,4 @@
+datasources:
+  hikari:
+    url: jdbc:tc:postgresql:15-alpine:///postgres?TC_INITSCRIPT=db-schema.sql
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver

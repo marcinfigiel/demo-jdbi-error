@@ -1,0 +1,15 @@
+micronaut:
+  application:
+    name: demo
+datasources:
+  hikari:
+    jdbc-url: jdbc:postgresql://localhost:5432/postgres
+    username: demo
+    password: demo
+    driver-class-name: org.postgresql.Driver
+    minimum-idle: 1
+    maximum-pool-size: 5
+    auto-commit: false
+    validation-query: SELECT 1
+    validation-query-timeout: 1000
+    connection-timeout: 20000
